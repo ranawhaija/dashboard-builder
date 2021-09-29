@@ -81,9 +81,7 @@ class MyChart {
                         priorityArray[chartData.priority - 1] = {
                             canvas: chartCanvas,
                             config: {
-                                type: chartData.type,
-                                data: chartData.data,
-                                options: {
+                                ...chartData, options: {
                                     plugins: {
                                         title: {
                                             display: true,
@@ -111,7 +109,9 @@ class MyChart {
      * @memberof MyChart
      */
     #fetchChartData(priorityArray) {
+        console.info('This is an info log to check the fetching of charts per priority');
         priorityArray.forEach((chart) => {
+            console.info(chart.config.title, 'priority', chart.config.priority);
             // check if the data is based as is or by url,
             // if it is a url then fetch the data using http request
             if (typeof (chart.config.data) == 'string') {
