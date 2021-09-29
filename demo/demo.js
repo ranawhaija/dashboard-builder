@@ -37,7 +37,6 @@ const sampleData = [{
     type: 'line',
     order: 4,
     width: 3,
-    size: { width: 3, height: 2 },
     priority: 2,
     title: 'chart 4',
     data: {
@@ -55,7 +54,6 @@ const sampleData = [{
     type: 'bar',
     order: 5,
     width: 3,
-    size: { width: 2, height: 3 },
     priority: 1,
     title: 'chart 5',
     data: 'https://mocki.io/v1/2e42c8bb-5156-4a94-88ba-891b6067c14c'
@@ -64,7 +62,6 @@ const sampleData = [{
     type: 'radar',
     order: 6,
     width: 2,
-    size: { width: 3, height: 2 },
     priority: 3,
     title: 'chart 6',
     data: {
@@ -111,7 +108,6 @@ const sampleData = [{
     type: 'doughnut',
     order: 7,
     width: 2,
-    size: { width: 2, height: 3 },
     priority: 4,
     title: 'chart 7',
     data: {
@@ -136,7 +132,6 @@ const sampleData = [{
     type: 'line',
     order: 8,
     width: 2,
-    size: { width: 3, height: 2 },
     priority: 5,
     title: 'chart 8',
     data: "https://mocki.io/v1/2e42c8bb-5156-4a94-88ba-891b6067c14c"
